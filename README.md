@@ -66,6 +66,10 @@ To better grasp the data, we have added a script to visualize the 3D movements o
 python3 scripts/visualize_movement.py --theia_c3d "data/theia_c3d_files/both11 double sidestep 002 pose_filt_1.c3d" --vicon_c3d "data/vicon_c3d_files/both11 double sidestep 002.c3d" --vicon_person pp22
 ```
 
+
+https://github.com/user-attachments/assets/ea756bf3-c55f-44f1-b296-68362f4e75c6
+
+
 For the theia data, two files are generated, one for each person (`pose_filt_0` and `pose_filt_1`), while vicon adds them in one file. You have to specify the right vicon person (`pp22`) with the right theia file (`pose_filt_1`). If you want to visualize the data of the other person, you need to change both the vicon person (`pp21`) and the theia file (`pose_filt_0`).
 
 ### Visualize timeseries
@@ -85,6 +89,7 @@ The default arguments used are:
 --data_type joint_angles
 --data_name left_knee
 ```
+![Screenshot 2024-10-24 at 12 51 53](https://github.com/user-attachments/assets/65b6fce3-3158-4165-a33a-f331957fd555)
 
 `exercise_name` should be one of the following: "double_sidestep", "dribble_simulation", "high_five", "sidestep", "slow_dribble", "pass", "shot", "walk_rotation". `particpant_number` should be an integer between 1 and 24. `trial_number` should be an integer between 1 and 6. `data_type` should be one of the following: "segment_angles", "joint_angles", "points". `data_name` should be the name of the segments, joint angle, or points you want to visualize.
 
