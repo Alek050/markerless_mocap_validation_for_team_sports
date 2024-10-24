@@ -1,0 +1,15 @@
+name: markerless_mocap_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - ezc3d=1.5.11
+  - kineticstoolkit=0.15
+  - pip=24.2
+  - matplotlib=3.9.2
+  - black=24.10
+  - flake8=7.1
+  - isort=5.13.2
+  - openpyxl=3.1
+  - fastparquet=2024.5
+  - pyarrow=15.0.2
