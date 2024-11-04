@@ -25,7 +25,7 @@ From here on, you can run the code in the repository. We have created different 
 
 ## Data availability
 
-...
+The data is available [here](https://doi.org/10.34894/LZPY3B). You can download both the raw .c3d files as well as the processed data, which are in .parquet format.
 
 ## Running the scripts
 
@@ -90,17 +90,17 @@ The default arguments used are:
 
 ## Reference
 
-If you use the code in this repository, or the data associated with the paper, please cite the following paper:
+If you use the code in this repository, or the data associated with the paper, please cite the following paper: UNDER REVISION
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+The code of this project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
-We would like to thank [Tamar](...) and [Dave](...) for their help in collecting the data for this project. Furthermore, we would like to thank [Felix](https://github.com/felixchenier) for creating and open sourcing the [kineticstoolkit](https://github.com/kineticstoolkit/kineticstoolkit) which was used to processin the data.
+We would like to thank [Tamar](https://github.com/TFoppen) and [Dave](https://github.com/DaveHanegraaf) for their help in collecting the data for this project. Furthermore, we would like to thank [Felix](https://github.com/felixchenier) for creating and open sourcing the [kineticstoolkit](https://github.com/kineticstoolkit/kineticstoolkit) which was used to processin the data.
 
 ## Contact
 
-If you have any questions regarding the paper, data, and/or the code, please reach out to the correspoding author of the paper: ...
+If you have any questions regarding the data and/or the code, please open an issue on GitHub.
 
