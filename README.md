@@ -2,6 +2,9 @@
 
 Welcome to the github repository related to the paper "Examining the Concurrent Validity of Markerless Motion Capture in Dual-Athlete Team Sports Movements". This repository consitsts of the code used to analyse the data, and generate the results of the paper. The data is available ...
 
+> [!Warning]
+> This project and code is still under review and should be taken with caution. Right now it is not allowed to use this code for academic, commercial or personal use. The project will be made openly available for anyone to use once the project is finished.
+
 ## Getting Started
 
 To be able to run the code, and tweak it for your own purposes, you need to follow the steps below.
@@ -97,7 +100,7 @@ The default arguments used are:
 --data_type joint_angles
 --data_name left_knee
 ```
-![Screenshot 2024-10-24 at 12 51 53](https://github.com/user-attachments/assets/65b6fce3-3158-4165-a33a-f331957fd555)
+![Example TimeSeries](https://github.com/user-attachments/assets/65b6fce3-3158-4165-a33a-f331957fd555)
 
 `exercise_name` should be one of the following: "double_sidestep", "dribble_simulation", "high_five", "sidestep", "slow_dribble", "pass", "shot", "walk_rotation". `particpant_number` should be an integer between 1 and 24. `trial_number` should be an integer between 1 and 6. `data_type` should be one of the following: "segment_angles", "joint_angles", "points". `data_name` should be the name of the segments, joint angle, or points you want to visualize.
 
