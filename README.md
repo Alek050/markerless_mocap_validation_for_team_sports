@@ -44,8 +44,11 @@ By default, the follwing arguments are used:
 ```
 The `input_dir` refers to the directory with the input raw data folders of theia and vicon. The `input_dir` should include two folders: `theia_c3d_files` and `vicon_c3d_files`. The `output_dir` refers to the directory where the preprocessed dataset will be saved. The `fill_missing_samples` argument is used to fill the missing samples in the dataset. The `preprocessing_file_loc` argument is used to save the preprocessing information. The `regenerate` argument is used to regenerate the preprocessed dataset, while using the preprocessing information to skip the manual selection of the start and end time for every sample, if availble in the preprocessing file.
 
+[!IMPORTANT]
+For creating a complete dataset, it is assumed that in the theia files are in a in a folder `theia_c3d_files`, the vicon files in a folder `vicon_c3d_files` in `--input_dir`. This can be changed in in `scripts/constants`. The naming of the files should be as follows: (1) participant/group, (2) exercise name (3) trial number. So for Vicon a valid file could be `"both1 double sidestep 001.c3d"` or `"pp2 walk rotation 003.c3d"`. For Theia a suffix is added. For the first person `pose_filt_0` is added, while for the second `pose_filt_1` is added. So the corresponding similar files for Theia are `"both1 double sidestep 001 pose_filt_0.c3d"`, `"both1 double sidestep 001 pose_filt_1.c3d"`, and `"pp2 walk rotation 003 pose_filt_0.c3d"`. Also, a corresponding `.txt` file should be added with the center of mass data: `"pp2 walk rotation 003 pose_filt_0 CoM.txt"`.
+
 ### Generate statistics
-To save the statistics of the preprocessed dataset in excel files, you can run the following command:
+To generate all the statistics (sTEE, r, RMSD, and BA CI) for every measured timeseries (segment orientations, joint angles, center of mass) into an excel table, you can run the following command:
 
 ```bash
 python3 scripts/generate_statistics.py
@@ -56,7 +59,12 @@ By default, the follwing arguments are used:
 --exercise all
 --preprocessing_file_loc preprocessing_df.csv
 ```
+This command will save the requested statistical results in an excel file in your current working directory.
+
 The `input_dir` refers to the directory with the preprocessed dataset. The `exercise` argument is used to select the exercise you want to generate the statistics for. The value can be "all", "double sidestep", "dribble simulation", "high five", "sidestep", "slow dribble", "pass", "shot", and "walk rotation", if any trials of that are found in the `input_dir` directory. The `preprocessing_file_loc` argument is used to load the preprocessing information, which is used to normalize the statistics for the special side of an exercise (e.g. the hand used for the high five (left or right) can be different for every couple).
+
+[!IMPORTANT]
+For creating the statistics, the `input_dir` should contain folders for every individual participant (`pp1`, `pp2`, ..., `pp24`). Every participant folder, should contain 6 parquet files per movement trial saved in the following format: (1) exercise name, (2) trial number, (3) data type, and (4) data provider. For instance, you could have `"pp1/double sidestep 001 angles theia.parquet"`, `"pp11/slow dribble 003 points vicon.parquet"`, etc.
 
 ### Visualize movement
 
