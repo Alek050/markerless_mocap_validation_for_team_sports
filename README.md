@@ -1,4 +1,4 @@
-# markerless_mocap_validation_for_team_sports
+# Markerless Mocap Validation for Team Sports
 
 Welcome to the github repository related to the paper "Examining the Concurrent Validity of Markerless Motion Capture in Dual-Athlete Team Sports Movements". This repository consitsts of the code used to analyse the data, and generate the results of the paper. The data is available ...
 
