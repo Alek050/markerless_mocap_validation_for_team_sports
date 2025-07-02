@@ -118,11 +118,22 @@ The default arguments used are:
 
 ## Reference
 
-If you use the code in this repository, or the data associated with the paper, please cite the following paper: UNDER REVISION
+If you use the code in this repository, or the data associated with the paper, please cite the following paper:
+```
+@article{oonk2025markerless,
+  title     = {Examining the concurrent validity of markerless motion capture in dual-athlete team sports movements},
+  author    = {Oonk, G. A. and Kempe, M. and Lemmink, K. A. P. M. and Buurke, T. J. W.},
+  journal   = {Journal of Sports Sciences},
+  year      = {2025},
+  publisher = {Taylor & Francis},
+  doi       = {10.1080/02640414.2025.2497678},
+  url       = {https://doi.org/10.1080/02640414.2025.2497678}
+}
+```
 
 ## License
 
-The code of this project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+The code of this project is licensed under the CCBY License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
