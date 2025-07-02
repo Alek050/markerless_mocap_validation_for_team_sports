@@ -1,6 +1,21 @@
 # Markerless Mocap Validation for Team Sports
 
-Welcome to the github repository related to the paper "Examining the Concurrent Validity of Markerless Motion Capture in Dual-Athlete Team Sports Movements". This repository consitsts of the code used to analyse the data, and generate the results of the paper. The data is available ...
+Welcome to the github repository related to the paper "Examining the Concurrent Validity of Markerless Motion Capture in Dual-Athlete Team Sports Movements". This repository consitsts of the code used to analyse the data, and generate the results of the paper. The paper is open access available [here](https://www.tandfonline.com/doi/full/10.1080/02640414.2025.2497678).
+
+> [!IMPORTANT]
+> If you use this repository, the dataset, or the paper associated to it, please refer to it accordingly:
+> ```shell
+> @article{oonk2025markerless,
+>   title     = {Examining the concurrent validity of markerless motion capture in dual-athlete team sports movements},
+>   author    = {Oonk, G. A. and Kempe, M. and Lemmink, K. A. P. M. and Buurke, T. J. W.},
+>   journal   = {Journal of Sports Sciences},
+>   year      = {2025},
+>   publisher = {Taylor & Francis},
+>   doi       = {10.1080/02640414.2025.2497678},
+>   url       = {https://doi.org/10.1080/02640414.2025.2497678}
+> }
+> ```
+
 
 ## Getting Started
 
@@ -111,7 +126,7 @@ The code of this project is licensed under the MIT License - see the [LICENSE.md
 
 ## Acknowledgments
 
-We would like to thank [Tamar](https://github.com/TFoppen) and [Dave](https://github.com/DaveHanegraaf) for their help in collecting the data for this project. Furthermore, we would like to thank [Felix](https://github.com/felixchenier) for creating and open sourcing the [kineticstoolkit](https://github.com/kineticstoolkit/kineticstoolkit) which was used to processin the data.
+We would like to thank [Tamar](https://github.com/TFoppen) and [Dave](https://github.com/DaveHanegraaf) for their help in collecting the data for this project. Furthermore, we would like to thank [Felix](https://github.com/felixchenier) for creating and open sourcing the [kineticstoolkit](https://github.com/kineticstoolkit/kineticstoolkit) which was used to processing the data.
 
 ## Contact
 
