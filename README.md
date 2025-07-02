@@ -2,9 +2,6 @@
 
 Welcome to the github repository related to the paper "Examining the Concurrent Validity of Markerless Motion Capture in Dual-Athlete Team Sports Movements". This repository consitsts of the code used to analyse the data, and generate the results of the paper. The data is available ...
 
-> [!Warning]
-> This project and code is still under review and should be taken with caution. Right now it is not allowed to use this code for academic, commercial or personal use. The project will be made openly available for anyone to use once the project is finished.
-
 ## Getting Started
 
 To be able to run the code, and tweak it for your own purposes, you need to follow the steps below.
